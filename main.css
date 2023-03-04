@@ -1,0 +1,80 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+:root {
+    --red: #af0202;
+    --black: #0a0a0a;
+    --white: #e6e6e6;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--white);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form .inputBox{
+    position: relative;
+    width: 225px;
+}
+
+.container form .inputBox input{
+    border: 1px solid #d8d8d8;
+    outline: none;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+.container form .inputBox input[type="submit"]{
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+}
+
+.container form .inputBox input[type="submit"]:hover{
+    color: var(--red);
+}
+
+.container form .inputBox:nth-child(3){
+    width: 120px;;
+    transition: 0.25s ease;
+}
+
+.container form .inputBox:nth-child(3):hover{
+width: 150px;
+}
+
+#validMessage{
+    color:blue;
+    font-weight: 800;
+}
+#invalidMessage{
+    color:red;
+    font-weight: 800;
+}
